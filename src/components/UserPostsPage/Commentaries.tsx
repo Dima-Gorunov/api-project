@@ -5,11 +5,8 @@ import CommentForm from "../../CustomElements/CommentsForm";
 
 const Commentaries = ({PostComments}: any) => {
 
-    let [uploadComments, setUploadCom] = useState(false)
-    let [formActive, setFormActive] = useState(false)
-    let openForm = () => {
-        setFormActive(true)
-    }
+    let [uploadComments, setUploadCom] = useState(false) // true - показаны все комменты, false - только первые 3
+    let [formActive, setFormActive] = useState(false)    // true - форма видна, false - скрыта
     return (
         <div className="post_comment-container">
             <div className="title-text">
@@ -27,8 +24,8 @@ const Commentaries = ({PostComments}: any) => {
             ))}
             <div className="post_comment_menu-container">
                 <CustomButton onClick={() => setUploadCom(true)}>Загрузить ещё</CustomButton>
-                <CustomButton href="#comments-form" onClick={() => openForm()}>Добавить
-                    комментарий</CustomButton>
+                {!formActive && < CustomButton href="#comments-form" onClick={() => setFormActive(true)}>Добавить
+                    комментарий</CustomButton>}
             </div>
             <div id="comments-form">
                 {formActive && <CommentForm/>}

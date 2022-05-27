@@ -14,7 +14,7 @@ const UserPostsPage = ({OnePost}: any) => {
                 {OnePost.body}
             </div>
             {uploadComments
-                ? <CommentariesContainer/>
+                ? <CommentariesContainer/>  // раздел с комментами поста
                 : <CustomButton onClick={() => setUploadCom(!uploadComments)}>
                     Показать комментарии
                 </CustomButton>
