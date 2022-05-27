@@ -1,0 +1,48 @@
+
+.content-container {
+  min-height: 80vh;
+  padding: 36px 62px 15px 53px;
+  position: relative;
+
+  .custom-link {
+    color: $background_light;
+    background-color: $background_dark;
+    font-family: 'Proxima Nova Condensed Semibold', cursive;
+
+  }
+}
+
+.title-text {
+  font-family: 'Alegreya Sans SC Medium', cursive;
+  font-size: 34px;
+  line-height: 40px;
+  margin-bottom: 16px;
+}
+
+.sub-title-text {
+  font-family: "Open Sans", cursive;
+  font-size: 12px;
+  line-height: 17px;
+  opacity: .4;
+}
+
+
+.content-container::before {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background-color: black;
+  position: absolute;
+}
+
+.content-container::after {
+  content: "";
+  top: 0;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background-color: black;
+  position: absolute;
+}

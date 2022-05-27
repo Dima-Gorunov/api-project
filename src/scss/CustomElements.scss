@@ -1,0 +1,61 @@
+.menu__custom-link-container {
+  display: flex;
+  font-family: 'Proxima Nova Condensed Semibold', cursive;
+  font-size: 14px;
+  font-weight: 600;
+  .custom-link {
+    padding: 11.5px 40.5px;
+    display: flex;
+    color: $background_dark;
+    background-color: $background_light;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.menu__custom-link-container:hover{
+  cursor: pointer;
+}
+
+.card-container {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+
+.card {
+  min-width: 239px;
+  max-width: 239px;
+  padding: 14px 17px;
+  height: 143px;
+  border: #DADADA solid 1px;
+  margin-right: 13px;
+  margin-bottom: 8px;
+  display: flex;
+  flex-direction: column;
+  .title-text{
+    font-family: "Open Sans Bold", cursive;
+    margin-bottom: 0;
+    font-size: 17px;
+    line-height: 23px;
+  }
+  .menu__custom-link-container{
+    margin-top: auto;
+  }
+}
+
+.card:hover {
+  border: #000000 solid 1px;;
+}
+
+div::-webkit-scrollbar {
+  width: 12px;               /* ширина scrollbar */
+}
+div::-webkit-scrollbar-track-piece {
+  background: $background_light; /* цвет дорожки */
+  border-bottom: 2px solid black;
+}
+div::-webkit-scrollbar-thumb {
+  background-color: $background_dark;    /* цвет плашки */
+}

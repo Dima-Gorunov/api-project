@@ -1,0 +1,32 @@
+
+.header {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  background-color: $background_dark;
+  min-height: 70px;
+  padding: 0 61px;
+}
+
+.header:before {
+  position: absolute;
+  content: "";
+  width: 200px;
+  background-color: white;
+  height: 1px;
+}
+
+.logo-container {
+  display: flex;
+}
+
+.header_menu-container {
+  display: flex;
+
+  > :not(:first-child) {
+    margin-left: 12px;
+  }
+}

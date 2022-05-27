@@ -1,0 +1,12 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  background-color: $background_light;
+  color: $background_dark;
+  max-width: 1116px;
+  margin: 0 auto;
+}
