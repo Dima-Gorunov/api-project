@@ -3,6 +3,7 @@
   font-family: 'Proxima Nova Condensed Semibold', cursive;
   font-size: 14px;
   font-weight: 600;
+
   .custom-link {
     padding: 11.5px 40.5px;
     display: flex;
@@ -14,7 +15,7 @@
   }
 }
 
-.menu__custom-link-container:hover{
+.menu__custom-link-container:hover {
   cursor: pointer;
 }
 
@@ -34,13 +35,15 @@
   margin-bottom: 8px;
   display: flex;
   flex-direction: column;
-  .title-text{
+
+  .title-text {
     font-family: "Open Sans Bold", cursive;
     margin-bottom: 0;
     font-size: 17px;
     line-height: 23px;
   }
-  .menu__custom-link-container{
+
+  .menu__custom-link-container {
     margin-top: auto;
   }
 }
@@ -50,20 +53,24 @@
 }
 
 div::-webkit-scrollbar {
-  width: 12px;               /* ширина scrollbar */
+  width: 12px; /* ширина scrollbar */
 }
+
 div::-webkit-scrollbar-track-piece {
   background: $background_light; /* цвет дорожки */
   border-bottom: 2px solid black;
 }
+
 div::-webkit-scrollbar-thumb {
-  background-color: $background_dark;    /* цвет плашки */
+  background-color: $background_dark; /* цвет плашки */
 }
 
 @media (max-width: 450px) {
-  .card-container{
+  .card-container {
     display: block;
-    .card{
+    overflow-x: hidden;
+
+    .card {
       margin: 0 auto 8px;
     }
   }
