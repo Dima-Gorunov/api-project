@@ -46,3 +46,15 @@
   background-color: black;
   position: absolute;
 }
+
+
+@media (max-width: 450px) {
+
+  .content-container::before {
+    display: none;
+  }
+
+  .content-container::after {
+    display: none;
+  }
+}

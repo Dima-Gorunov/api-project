@@ -15,8 +15,9 @@
 
   > div {
     min-width: 350px;
-  position: relative;
+    position: relative;
   }
+
   > div::after {
     content: "";
     position: absolute;
@@ -26,11 +27,24 @@
     width: 2px;
     height: 130px;
   }
-  > div:last-child{
+
+  > div:last-child {
     margin-left: 15px;
   }
 
   div {
     margin-bottom: 15px;
   }
+}
+
+
+@media (max-width: 450px) {
+.profile-page-container {
+
+  .menu__custom-link-container {
+    .custom-link {
+      margin: 0 auto;
+    }
+  }
+}
 }

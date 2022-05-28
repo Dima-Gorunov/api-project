@@ -4,3 +4,11 @@
 }
 
 
+@media (max-width: 450px) {
+  .users-page-container {
+    >.title-text {
+      text-align: center;
+    }
+  }
+
+}

@@ -8,19 +8,22 @@
   margin: 0 auto;
   background-color: $background_dark;
   min-height: 70px;
-  padding: 0 61px;
+  padding: 10px 61px 10px;
 }
 
-.header:before {
-  position: absolute;
-  content: "";
-  width: 200px;
-  background-color: white;
-  height: 1px;
-}
 
 .logo-container {
   display: flex;
+  position: relative;
+}
+
+.logo-container:before {
+  position: absolute;
+  content: "";
+  top: 9px;
+  width: 175px;
+  background-color: white;
+  height: 2px;
 }
 
 .header_menu-container {
@@ -28,5 +31,21 @@
 
   > :not(:first-child) {
     margin-left: 12px;
+  }
+}
+
+@media (max-width: 450px) {
+  .header{
+    .custom-link{
+      text-align: center;
+      width: 130px;
+    }
+  }
+  .header_menu-container {
+    height: 35px;
+    margin: 0 auto;
+  }
+  .logo-container{
+    margin: 0 auto 10px;
   }
 }
