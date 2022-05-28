@@ -40,21 +40,27 @@
 
 @media (max-width: 450px) {
   .profile-page-container {
+    width: 100%;
+
+    .contacts-container {
+      display: block;
+
+      > div {
+        min-width: 0;
+        position: relative;
+        margin: 0;
+        padding: 0;
+      }
+
+      > div:after {
+        display: none;
+      }
+    }
 
     .menu__custom-link-container {
       .custom-link {
         margin: 0 auto;
       }
-    }
-  }
-  .contacts-container {
-    > div {
-      max-width: 250px;
-      position: relative;
-    }
-
-    > div:after {
-      display: none;
     }
   }
 }
