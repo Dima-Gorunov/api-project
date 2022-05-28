@@ -41,6 +41,17 @@
 @media (max-width: 450px) {
   .profile-page-container {
     width: 100%;
+    .menu__custom-link-container {
+      .custom-link {
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+@media (max-width: 830px) {
+
+  .profile-page-container{
 
     .contacts-container {
       display: block;
@@ -56,11 +67,6 @@
         display: none;
       }
     }
-
-    .menu__custom-link-container {
-      .custom-link {
-        margin: 0 auto;
-      }
-    }
   }
+
 }
