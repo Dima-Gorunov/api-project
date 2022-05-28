@@ -1,9 +1,14 @@
 
-
-
-
-.footer{
+.footer {
   background-color: $background_dark;
   height: 40px;
 
+}
+
+
+@media (max-width: 450px) {
+
+  .footer {
+    min-width: 320px;
+  }
 }

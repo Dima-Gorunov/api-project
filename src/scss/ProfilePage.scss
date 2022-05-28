@@ -39,12 +39,22 @@
 
 
 @media (max-width: 450px) {
-.profile-page-container {
+  .profile-page-container {
 
-  .menu__custom-link-container {
-    .custom-link {
-      margin: 0 auto;
+    .menu__custom-link-container {
+      .custom-link {
+        margin: 0 auto;
+      }
     }
   }
-}
+  .contacts-container {
+    > div {
+      max-width: 250px;
+      position: relative;
+    }
+
+    > div:after {
+      display: none;
+    }
+  }
 }
