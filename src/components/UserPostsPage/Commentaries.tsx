@@ -23,7 +23,7 @@ const Commentaries = ({PostComments}: any) => {
                 </div>
             ))}
             <div className="post_comment_menu-container">
-                {uploadComments && < CustomButton onClick={() => setUploadCom(true)}>Загрузить все</CustomButton>}
+                {!uploadComments && < CustomButton onClick={() => setUploadCom(true)}>Загрузить все</CustomButton>}
                 {!formActive && < CustomButton href="#comments-form" onClick={() => setFormActive(true)}>Добавить
                     комментарий</CustomButton>}
             </div>
