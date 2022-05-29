@@ -35,7 +35,7 @@ const ProfilePage = ({Profile, Posts}: any) => {
                             <CustomLink to={`post/${e.id}`}>подробнее</CustomLink>
                         </div>
                     ))}
-                    {!uploadValid && <CustomButton onClick={() => setUploadValid(true)}>Загрузить</CustomButton>}
+                    {!uploadValid && <CustomButton onClick={() => setUploadValid(true)}>Загрузить все</CustomButton>}
                 </div>
             </div>
         </div>
